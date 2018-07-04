@@ -1,0 +1,38 @@
+<nav class="navbar-default mainNavSwitch" role="navigation">
+ <span class="x-close">X</span>
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu center" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <img alt="image" class="img-circle" width="80px"
+                             src="./assets/img/avatar/{{loginInfo.avatar}}" />
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                      <span class="clear">
+                          <span class="block m-t-xs">
+                          <strong class="font-bold navColor">{{loginInfo.first_name}} {{loginInfo.last_name}}</strong>
+                      </span>
+                          <span class="text-muted text-xs block">{{loginInfo.title}}</span>
+                          <span class="text-muted text-xs block">{{loginInfo.email}}</span>
+                      </span>
+                    </a>
+                </div>
+                <div class="logo-element">
+                    SWWCC
+                </div>
+            </li>
+            <li [ngClass]="{active: activeRoute('home')}">
+                <a [routerLink]="['./home']" class="navButtons"><i class="fa fa-home"></i> <span class="nav-label">home</span></a>
+            </li>
+            <li [ngClass]="{active: activeRoute('examples')}">
+                <a [routerLink]="['./examples']" class="navButtons"><i class="fa fa-briefcase"></i> <span class="nav-label">Projects</span></a>
+            </li>
+            <li [ngClass]="{active: activeRoute('resume')}">
+                <a [routerLink]="['./resume']" class="navButtons"><i class="fa fa-file"></i> <span class="nav-label">Resume</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
