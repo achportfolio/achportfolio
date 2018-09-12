@@ -7122,17 +7122,11 @@ body.rtls.top-navigation .footer.fixed {
 }
 
 .desktop_bg {
-  background-image: url('/assets/img/avatar/desktop.svg');
-  background-size: 300px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  
 }
 
 .resume_bg {
-  background-image: url('/assets/img/avatar/resume.svg');
-  background-size: 300px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+
 }
 
 /*  SPECIAL CLASSES  */
@@ -7196,11 +7190,9 @@ body.rtls.top-navigation .footer.fixed {
 
 .homeCircleImg {
   opacity: 0;
-  left: 36%;
   top: 150px;
   width: 450px;
   height:450px;
-  position: absolute;
 }
 
 .mainh1 {
@@ -7267,12 +7259,24 @@ body.rtls.top-navigation .footer.fixed {
 	opacity: 0;
 }
 
+.mobileHide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .opacityFull {
 	opacity: 1;
 }
 
 .opacityEmpty {
   opacity: 0;
+}
+
+.relative0 {
+  position: relative;
+  padding: 0;
 }
 
 #mainSquareMargin {
